@@ -1,0 +1,76 @@
+
+    @import "https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400,600|Tulpen+One&display=swap";
+    @import 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap';
+
+
+    .scroll-downs {
+        position: flex;
+        inset: 0;
+        margin: auto;
+        width: 34px;
+        height: 55px;
+    }
+
+    .mousey {
+        width: 3px;
+        padding: 10px 15px;
+        height: 35px;
+        border: 3px solid #fff;
+        border-radius: 25px;
+        opacity: 0.75;
+        box-sizing: content-box;
+    }
+
+    .scroller {
+        width: 4px;
+        height: 10px;
+        border-radius: 25%;
+        background-color: #fff;
+        animation: scroll 2.2s cubic-bezier(.15, .41, .69, .94)  infinite;
+    }
+
+    @keyframes scroll {
+        0% {
+            opacity: 0;
+        }
+
+        10% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        100% {
+            transform: translateY(15px);
+            opacity: 0;
+        }
+    }
+
+
+
+
+    .icons {
+        margin: 10px;
+        border-radius: 20px;
+        background-color: rgb(255 255 255 / 80%);
+        cursor: pointer;
+        transition: ease 1s;
+    }
+
+    .icons:hover {
+        transform: scale(1.2);
+        background-color: rgb(255 255 255 / 90%);
+        ;
+    }
+
+
+    .project-subtitle  {
+        font-size: 1.5rem;
+      }
+      @keyframes show-up-icons {
+        0% { opacity: 0; }
+        60% { opacity: 0; }
+        100% {  opacity: 1;}
+      }
+      .experience-content{
+        animation: show-up-icons 2s linear ;
+      }
