@@ -63,7 +63,7 @@ export default function Header({ variant }) {
                           </li>
                           <li>
                             <Link
-                              to="photography-agency"
+                              to="tables"
                               onClick={() => setMobileToggle(false)}
                             >
                               DataTables

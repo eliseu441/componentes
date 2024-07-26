@@ -89,20 +89,26 @@ function Tables() {
                                 onChange={(e) => setSearchTerm(e.target.value)}
                             />
                             <Table striped hover className="custom-table">
-                                <thead>
+                                <thead class='col-12'>
                                     <tr>
-                                        <th style={fontColor} className='d-flex justify-content-center'>REPO</th>
+                                        <th style={fontColor} className='d-flex'>REPO</th>
                                         <th style={fontColor} onClick={() => requestSort('name')}>
+                                            <div className='d-flex'>
                                             NAME
                                             {sortConfig.key === 'name' ? <small >{sortConfig.direction === 'ascending' ? ' ↓' : ' ↑'}</small> : null}
+                                            </div>
                                             </th>
                                         <th style={fontColor} onClick={() => requestSort('languages')}>
+                                        <div className='d-flex'>
                                             LANGUAGES/FRAMEWORKS
                                             {sortConfig.key === 'languages' ? <small >{sortConfig.direction === 'ascending' ? ' ↓' : ' ↑'}</small> : null}
+                                            </div>
                                             </th>
                                         <th style={fontColor} onClick={() => requestSort('data')}>
+                                        <div className='d-flex'>
                                             START_YEAR
                                             {sortConfig.key === 'data' ? <small >{sortConfig.direction === 'ascending' ? ' ↓' : ' ↑'}</small> : null}
+                                            </div>
                                             </th>
                                     </tr>
                                 </thead>
