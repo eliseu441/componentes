@@ -21,13 +21,13 @@ export function MaquinaDeEscrever(props) {
   }, []);
 
   return (
-    <div>
+    <>
       {text}
       {mostrarCursor && (
-        <span className="animate-animar-cursor text-xl md:text-2xl ml-1 font-medium">
+        <span className="">
           |
         </span>
       )}
-    </div>
+      </>
   );
 }

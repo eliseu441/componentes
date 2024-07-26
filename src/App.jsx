@@ -13,9 +13,14 @@ import Home from './pages/Home/Home.jsx'
 import Backgrounds from './pages/Backgrounds/Backgrounds.jsx'
 import Repos from './pages/Repos/Repos.jsx'
 import Tables from './pages/Tables/Tables.jsx'
+import Aos from 'aos';
+
 
 
 function App() {
+  useEffect(() => {
+    Aos.init({ once: true });
+     }, []);
   return ( 
   <HashRouter>
     <Header/>
